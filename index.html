@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>N. Priyadharshini — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">N. Priyadharshini</a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">home</a>
+        <a href="#about" class="nav-link">about</a>
+        <a href="#skill" class="nav-link">skill</a>
+        <a href="#certificat" class="nav-link">certificat</a>
+        <a href="#contect" class="nav-link">contect</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h1>Hi — I'm <span class="accent">N. Priyadharshini</span></h1>
+          <p class="lead">A passionate web enthusiast who builds beautiful and accessible user experiences using modern web technologies.</p>
+          <div class="hero-actions">
+           <!-- <a href="#about" class="btn">About me</a>-->
+           <!-- <a href="#contect" class="btn btn-ghost">Contact</a>-->
+          </div>
+        </div>
+       <!-- <div class="hero-image" aria-hidden="true">
+          <svg viewBox="0 0 300 300" class="blob">
+           <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7b61ff"></stop>
+                <stop offset="1" stop-color="#36d8d0"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="300" rx="30" fill="url(#g)"></rect>
+          </svg>
+        </div>-->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div>
+            <p>I'm an aspiring web developer focusing on front-end technologies. I enjoy turning ideas into responsive, accessible websites and learning new tools and techniques to deliver delightful user experiences.</p>
+            <ul>
+              <li>Curious and constantly learning</li>
+              <li>Attention to detail</li>
+              <li>Team player and problem solver</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>Projects</strong>
+              <span>10+</span>
+            </div>
+            <div class="stat">
+              <strong>Experience</strong>
+              <span>Student / Self-taught</span>
+            </div>
+            <div class="stat">
+              <strong>Interests</strong>
+              <span>Web, Cloud, Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill" class="section skills">
+      <div class="container">
+        <h2>Skill</h2>
+        <p class="muted">Advanced skills and technologies I work with:</p>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-header"><strong>Advanced HTML</strong><span class="percent">95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header"><strong>CSS (Advanced)</strong><span class="percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header"><strong>JavaScript (Advanced)</strong><span class="percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header"><strong>Python</strong><span class="percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="75"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header"><strong>C++</strong><span class="percent">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICAT -->
+    <section id="certificat" class="section certificat">
+      <div class="container">
+        <h2>Certificat</h2>
+        <p class="muted">Selected certifications and trainings</p>
+        <ul class="cert-list">
+          <li>
+            <strong>Web Development</strong>
+            <span class="cert-desc">Responsive web design & front-end development</span>
+          </li>
+          <li>
+            <strong>Cloud Computing</strong>
+            <span class="cert-desc">Introduction to Cloud services & deployment</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTECT -->
+    <section id="contect" class="section contact">
+      <div class="container">
+        <h2>Contect</h2>
+        <p class="muted">Have a project or want to say hi? Fill the form below.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write a short message"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> N. Priyadharshini — Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
